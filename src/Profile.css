@@ -1,0 +1,85 @@
+.profile-container {
+  text-align: center;
+  max-width: 450px;
+  margin: auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-container:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #ff6600;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 17px;
+  margin: 12px 0;
+}
+
+/* ✅ Editable Phone Number */
+.profile-input {
+  width: 80%;
+  padding: 8px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  text-align: center;
+  margin-top: 10px;
+  transition: border 0.3s ease-in-out;
+}
+
+.profile-input:focus {
+  border-color: #ff6600;
+  outline: none;
+}
+
+/* ✅ Buttons */
+.profile-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-btn:hover {
+  background: #e65c00;
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background: #ccc;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background: #bbb;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 480px) {
+  .profile-container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  h2 {
+      font-size: 22px;
+  }
+
+  .profile-input {
+      width: 100%;
+  }
+}

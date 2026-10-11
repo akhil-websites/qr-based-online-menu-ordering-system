@@ -1,0 +1,298 @@
+/* Cart Page */
+.cart-page {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+/* Header Animation */
+.cart-page h2 {
+  font-size: 2rem;
+  color: #ff5733;
+  margin-bottom: 20px;
+  position: relative;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Cart Items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out 0.3s forwards;
+}
+
+/* Individual Cart Item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 15px;
+  background: linear-gradient(to right, #f8f8f8, #fff);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease-in-out;
+  transform: scale(0.98);
+}
+
+.cart-item:hover {
+  background: #f1f1f1;
+  transform: scale(1);
+}
+
+/* Item Image */
+.cart-item img {
+  width: 65px;
+  height: 65px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+
+.cart-item img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
+
+/* Item Details */
+.cart-item-info {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.cart-item-info h3 {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+
+.cart-item-info p {
+  font-size: 1rem;
+  color: #666;
+  font-weight: bold;
+}
+
+/* Remove Button */
+.remove-btn {
+  background: #ff3b3b;
+  color: white;
+  border: none;
+  width: 55px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+}
+
+.remove-btn:hover {
+  background: #e60000;
+  transform: scale(1.1);
+}
+
+/* Total Price */
+.cart-total {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #28a745;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Buttons (Order & Change Table) */
+.place-order-btn,
+.change-table-btn {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.place-order-btn {
+  background: #28a745;
+  color: white;
+}
+
+.place-order-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+.change-table-btn {
+  background: #ffc107;
+  color: #333;
+}
+
+.change-table-btn:hover {
+  background: #e0a800;
+  transform: scale(1.05);
+}
+
+/* Coupon Section */
+.coupon-section {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.coupon-section input {
+  width: 60%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.coupon-section input:focus {
+  border-color: #ff5733;
+  outline: none;
+}
+
+/* Apply Coupon Button */
+.apply-coupon-btn {
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.apply-coupon-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Coupon Suggestions */
+.coupon-suggestions {
+  margin-top: 10px;
+  background: #f8f9fa;
+  padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.coupon-suggestions h4 {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.coupon-suggestions ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coupon-item {
+  padding: 10px;
+  cursor: pointer;
+  background: white;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  border: 1px solid #ddd;
+  transition: 0.3s ease-in-out;
+}
+
+.coupon-item:hover {
+  background: #e9ecef;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart-page {
+    width: 95%;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .cart-item-info {
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .remove-btn {
+    width: 100%;
+  }
+
+  .coupon-section input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-page {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .cart-item-info h3 {
+    font-size: 1rem;
+  }
+
+  .cart-total {
+    font-size: 1.1rem;
+  }
+
+  .place-order-btn,
+  .change-table-btn {
+    width: 90%;
+    font-size: 0.9rem;
+  }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade In Up Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

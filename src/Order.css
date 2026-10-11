@@ -1,0 +1,92 @@
+/* Container for the order section */
+.order-container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Order Details Card */
+.order-details {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Table */
+.order-table {
+  width: 100%;
+  margin-top: 15px;
+  border-collapse: collapse;
+  overflow-x: auto; /* Makes table scrollable on smaller screens */
+}
+
+/* Table Headers & Cells */
+.order-table th,
+.order-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.order-table th {
+  background-color: #ff6600;
+  color: white;
+}
+
+/* Order Status Colors */
+.pending {
+  color: orange;
+}
+
+.approved {
+  color: green;
+}
+
+/* Order Expiry Text */
+.order-expiry {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+}
+
+/* ✅ Responsive Design - Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .order-details {
+    width: 95%;
+    padding: 15px;
+  }
+
+  .order-table th,
+  .order-table td {
+    padding: 8px;
+    font-size: 14px; /* Reduce font size on smaller screens */
+  }
+}
+
+/* ✅ Mobile-Friendly Design (Up to 480px) */
+@media (max-width: 480px) {
+  .order-details {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .order-table {
+    display: block;
+    overflow-x: auto; /* Enables horizontal scrolling for small screens */
+  }
+
+  .order-table th,
+  .order-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .order-expiry {
+    font-size: 14px;
+  }
+}

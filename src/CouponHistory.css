@@ -1,0 +1,97 @@
+/* CouponHistory.css */
+.coupon-history-container {
+    max-width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow-x: auto;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+.coupon-history-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    animation: slideIn 1s ease-in-out;
+}
+
+.coupon-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.coupon-history-header {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.coupon-history-row:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.coupon-history-data {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background 0.3s;
+}
+
+.coupon-history-data:hover {
+    background: #e0e0e0;
+}
+
+.coupon-history-download-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.coupon-history-download-button:hover {
+    background: #e68900;
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .coupon-history-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .coupon-history-title {
+        font-size: 20px;
+    }
+
+    .coupon-history-table {
+        font-size: 14px;
+    }
+
+    .coupon-history-download-button {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}

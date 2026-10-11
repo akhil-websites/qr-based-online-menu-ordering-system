@@ -1,0 +1,59 @@
+.table-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.table-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tables-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.table-box {
+    border: 2px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.table-box:hover {
+    transform: scale(1.05);
+}
+
+.button-group {
+    margin-top: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.open {
+    background-color: green;
+    color: white;
+}
+
+.occupied {
+    background-color: red;
+    color: white;
+}
+
+.reserved {
+    background-color: orange;
+    color: white;
+}
+
+

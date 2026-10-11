@@ -1,0 +1,570 @@
+/* 🌟 Admin Panel Container */
+.admin-panel {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* 🔹 Admin Panel Header */
+.admin-panel h2 {
+  font-size: 2.5rem;
+  color: #ff5733;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* ✅ Category Management Section */
+.manage-categories {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔹 Category Buttons Styling */
+.category-buttons {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 10px; /* Space between buttons */
+  margin-bottom: 20px;
+  overflow-x: auto; /* Allow horizontal scrolling if needed */
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+
+.category-buttons button {
+  padding: 12px 20px;
+  background: linear-gradient(135deg, #ff5733, #ff7043);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-buttons button:hover {
+  background: linear-gradient(135deg, #e64a19, #ff5722);
+  transform: scale(1.08);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* ✅ Admin Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+  padding: 14px;
+  border-bottom: 2px solid #ddd;
+  text-align: center;
+}
+
+.admin-table th {
+  background: #ff5733;
+  color: white;
+  font-size: 1.1rem;
+}
+
+.admin-table td {
+  font-size: 1rem;
+}
+
+/* ✅ Availability Badges */
+.available {
+  background: green;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.not-available {
+  background: red;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* ✅ Add Item Section */
+.add-item {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.add-item input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.add-item input:focus {
+  border-color: #ff5733;
+  outline: none;
+}
+
+/* 🔹 Enhanced Button Styling */
+.add-btn,
+.logout-btn,
+.approve-btn,
+.deny-btn {
+  background: linear-gradient(135deg, #28a745, #34d058);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn {
+  background: linear-gradient(135deg, #dc3545, #ff5b5b);
+}
+
+.add-btn:hover,
+.logout-btn:hover,
+.approve-btn:hover,
+.deny-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* ✅ Pending Orders & History */
+.pending-orders-section,
+.order-history-section {
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Order Cards */
+.order-card {
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.order-card:hover {
+  transform: scale(1.02);
+}
+
+/* ✅ Approve/Deny Buttons */
+.approve-btn {
+  background: linear-gradient(135deg, #28a745, #34d058);
+}
+
+.deny-btn {
+  background: linear-gradient(135deg, #dc3545, #ff5b5b);
+}
+
+.approve-btn:hover,
+.deny-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Approved/Rejected Orders */
+.approved {
+  background: lightgreen;
+  color: darkgreen;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.denied {
+  background: lightcoral;
+  color: darkred;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .admin-panel {
+      width: 95%;
+      padding: 20px;
+  }
+
+  .category-buttons {
+      gap: 10px;
+  }
+
+  .category-buttons button {
+      padding: 10px 14px;
+      font-size: 0.95rem;
+  }
+
+  .admin-table th,
+  .admin-table td {
+      padding: 10px;
+      font-size: 0.9rem;
+  }
+
+  .add-item {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .add-item input {
+      width: 90%;
+  }
+}
+
+
+/* ✅ General Admin Panel Styling */
+.admin-panel {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2, h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+
+
+/* ✅ Add New Item Section */
+.add-item, .upload-excel {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.add-item input, .upload-excel input {
+  display: block;
+  width: 80%;
+  padding: 8px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-btn, .upload-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.add-btn:hover, .upload-btn:hover {
+  background-color: #218838;
+}
+
+/* ✅ Table Styling */
+.admin-section {
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  margin-top: 15px;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.admin-table th {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.admin-table td input {
+  width: 70px;
+  padding: 5px;
+  text-align: center;
+}
+
+/* ✅ Image Styling */
+.menu-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* ✅ Availability Button */
+.available {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.not-available {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.available:hover {
+  background-color: #218838;
+}
+
+.not-available:hover {
+  background-color: #c82333;
+}
+
+/* ✅ Delete Button */
+.delete-btn {
+  background-color: #ff4444;
+  color: white;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #cc0000;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .admin-table th, .admin-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .menu-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .add-item input, .upload-excel input {
+    width: 95%;
+  }
+}
+
+
+/* ✅ QR Code Section Styling */
+.qrcode-data-section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qrcode-data-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Title Styling */
+.qrcode-data-section h3 {
+  font-size: 1.8rem;
+  color: #444;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* ✅ View QR Code Button */
+.qr-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qr-btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ✅ QR Code Container */
+.qrcode-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ✅ Individual QR Code */
+.qr-code {
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.qr-code:hover {
+  transform: scale(1.1);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .qrcode-data-section h3 {
+    font-size: 1.5rem;
+  }
+  .qr-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .qrcode-data-section {
+    padding: 15px;
+  }
+  .qrcode-data-section h3 {
+    font-size: 1.3rem;
+  }
+  .qr-btn {
+    font-size: 0.85rem;
+    padding: 7px 14px;
+  }
+}
+
+
+/* Common Styling for All Sections */
+.coupon-data-section,
+.order-history-section,
+.user-data-section,
+.qrcode-data-section,
+.coupons-history-section,
+.table-management-section {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.coupon-data-section:hover,
+.order-history-section:hover,
+.user-data-section:hover,
+.qrcode-data-section:hover,
+.coupons-history-section:hover,
+.table-management-section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.users-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+.history-btn {
+  background: #ff5733;
+  color: #fff;
+}
+
+.table-btn {
+  background: #28a745;
+  color: #fff;
+}
+
+.logout-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+/* Button Hover Effects */
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+/* Logout Button */
+.admin-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logout-btn {
+  width: 200px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-section {
+    grid-template-columns: 1fr;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

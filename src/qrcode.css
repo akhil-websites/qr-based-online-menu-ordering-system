@@ -1,0 +1,105 @@
+.qrcode-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.qrcode-container h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.qrcode-container input {
+  width: 250px;
+  padding: 10px 15px;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.qrcode-container input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+.qrcode-container button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.qrcode-container button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.qr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.qr-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.qr-box canvas {
+  width: 150px !important;
+  height: 150px !important;
+}
+
+.qr-card p {
+  margin-top: 1rem;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.no-orders {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .qrcode-container input {
+    width: 90%;
+  }
+
+  .qr-box canvas {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .qrcode-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .qr-box canvas {
+    width: 100px !important;
+    height: 100px !important;
+  }
+}

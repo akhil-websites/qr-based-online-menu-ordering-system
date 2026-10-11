@@ -1,0 +1,74 @@
+/* Footer Styling */
+.footer {
+    background: #222;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ff5733;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* Social Media Section */
+  .footer-social h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #ff5733;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    background: #e64a19;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+  
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .footer-container {
+      flex-direction: row;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  
